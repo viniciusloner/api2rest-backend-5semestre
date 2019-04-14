@@ -26,6 +26,4 @@ app.get('/', (req, res) => {
 
 require('./app/controllers/index')(app)
 
-server.listen(process.env.PORT || 8000, () =>{
-    console.log('Server ON')
-})
+server.listen(process.env.PORT || 8000)

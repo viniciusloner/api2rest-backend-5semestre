@@ -20,6 +20,6 @@ app.use(bodyParser.urlencoded({extended: false}))
     return next()
 }) */
 
-require('./src/app/controllers/index')(app)
+require('./app/controllers/index')(app)
 
-app.listen(process.env.PORT || 8000)
+app.listen(process.env.PORT)

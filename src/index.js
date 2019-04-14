@@ -20,6 +20,10 @@ app.use((req, res, next) => {
     return next()
 })
 
+app.get('/', (req, res) => {
+    res.send('Hello World')
+})
+
 require('./app/controllers/index')(app)
 
 server.listen(process.env.PORT || 8000, () =>{

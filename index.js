@@ -20,10 +20,6 @@ app.use(bodyParser.urlencoded({extended: false}))
     return next()
 }) */
 
-app.get('/', (req, res) => {
-    res.send('Hello World')
-})
-
-require('./app/controllers/index')(app)
+require('./src/app/controllers/index')(app)
 
 app.listen(process.env.PORT || 8000)
